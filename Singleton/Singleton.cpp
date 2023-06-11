@@ -14,6 +14,8 @@
  2.It can make it difficult to test code that uses Singletons.
 3.It can lead to performance problems in multithreaded applications.
 4.It can make it difficult to change the implementation of the Singleton class.
+
+**This is a thread safe singleton class instantiation.
  */
 #include <iostream>
 #include <mutex>
