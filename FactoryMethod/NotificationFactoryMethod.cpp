@@ -15,6 +15,7 @@ NotificationFactoryMethod::~NotificationFactoryMethod()
     std::cout << "NotificationFactoryMethod Destructor Called!\n";
     if (notification)
     {
+        std::cout << "Notification Destructor called form NotificationFactoryMethod\n";
         delete notification;
         notification = nullptr;
     }

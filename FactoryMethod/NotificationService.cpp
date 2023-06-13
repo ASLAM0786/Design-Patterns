@@ -22,6 +22,8 @@ The code may become more complicated since you need to introduce a lot of new su
     to extend its internal components.
 3-Use the Factory Method when you want to save system resources by reusing existing objects
     instead of rebuilding them each time.
+
+**Design A notification service which send notification using different medium like(email, sms ,etc..)
  */
 #include <iostream>
 #include "NotificationFactoryMethod.h"
@@ -55,7 +57,7 @@ void NotificationService::LaunchService(Constant::NotificationType NotificationT
     NotificationFactoryMethod *notificationFactoryMethod = new NotificationFactoryMethod();
     Notification *notification = notificationFactoryMethod->createNotification(NotificationType);
     notification->NotifyUser();
-    delete notification;
+    delete notificationFactoryMethod;
 }
 int main()
 {
