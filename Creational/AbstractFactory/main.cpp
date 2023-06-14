@@ -23,5 +23,8 @@ int main()
     Constant::Location location = Constant::Location::INDIA; // todo write logic here to get location
     CarFactory *carFactory = AbstractFactory::buildCar(carType, location);
     Car *car = carFactory->buildCar(carType);
+    carFactory->buildCar(carType)->print(); //*Print Car info
+    delete car;
+    delete carFactory;
     return 0;
 }

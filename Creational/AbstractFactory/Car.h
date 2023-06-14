@@ -16,6 +16,7 @@ public:
     Constant::Location getLocation();
     void setCarType(Constant::CarType carType);
     void setLocation(Constant::Location location);
+    void print();
 };
 
 #endif // CAR_H

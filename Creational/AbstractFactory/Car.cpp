@@ -1,5 +1,5 @@
 #include "Car.h"
-
+#include <iostream>
 Car::Car(Constant::CarType carType, Constant::Location location)
 {
     this->model = carType;
@@ -28,4 +28,9 @@ void Car::setCarType(Constant::CarType carType)
 void Car::setLocation(Constant::Location location)
 {
     this->location = location;
+}
+
+void Car::print()
+{
+    std::cout << "CarModel - " << this->model << " located in " << this->location;
 }

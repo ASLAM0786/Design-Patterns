@@ -18,13 +18,13 @@ Car *USACarFactory::buildCar(Constant::CarType carType)
     switch (carType)
     {
     case Constant::CarType::LUXURY:
-        car = new LuxuryCar(Constant::Location::DEFAULT);
+        car = new LuxuryCar(Constant::Location::USA);
         break;
     case Constant::CarType::MICRO:
-        car = new MicroCar(Constant::Location::DEFAULT);
+        car = new MicroCar(Constant::Location::USA);
         break;
     case Constant::CarType::MINI:
-        car = new MiniCar(Constant::Location::DEFAULT);
+        car = new MiniCar(Constant::Location::USA);
         break;
     default:
         break;
